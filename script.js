@@ -29,7 +29,7 @@ function game() {
 
     let computerScore = 0;
     let playerScore = 0;
-
+/*
     for(let i = 0; i < 5; i++) {
         const roundWinner = playRound();
         if(roundWinner == 1) {
@@ -38,7 +38,7 @@ function game() {
             computerScore++;
         }
     }
-
+*/
     if(computerScore == playerScore) {
         return "Draw!";
     } else if (playerScore > computerScore) {

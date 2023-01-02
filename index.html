@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main>
+        <h1>Rock, paper, scissors</h1>
+        <p>Play 5 rounds against the computer, the first one to reach 5 points wins</p>
+        <div class="round-container">
+            <div class="selection-container">
+                <p id="player-selection"></p>
+            </div>
+            <div class="selection-container">
+                <p id="computer-selection"></p>
+            </div>
+        </div>
+        <h2>Score</h2>
+        <div class="scores">
+            <div class="score-container">
+                <p class="score" id="player-score"></p>
+                <p>You</p>
+            </div>
+            <div class="score-container">
+                <p class="score" id="computer-score"></p>
+                <p>Computer</p>
+            </div>
+        </div>
+        <ul class="buttons">
+            <li class="button__wrapper">
+                <button class="button" id="rock">Rock</button>
+            <li class="button__wrapper">
+                <button class="button" id="paper">Paper</button>
+            </li>
+            <li class="button__wrapper">
+                <button class="button" id="scissors">Scissors</button></li>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <p class="attribution">Design & Code by <a href="https://github.com/David35D">David</a></p>
+    </footer>
+
+    <!--
+        3 Buttons
+        Div for displaying results
+        Display the running score
+        Announce a winner when one reaches 5 points
+    -->
     <script src="script.js"></script>
 </body>
 </html>
