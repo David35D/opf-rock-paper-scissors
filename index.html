@@ -5,29 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
+        <div class="card__header">
+            <h1 class="card__title">Rock Paper Scissors</h1>
+        </div>    
         <article class="game-card">
-            <div class="card__header">
-                <h1 class="card__title">Rock Paper Scissors</h1>
-                <p class="round-winner">First to score 5 points wins</p>
-            </div>    
             <div class="scoreboard">
-                <div class="score-container">
-                    <div class="selection-container">
-                        <p class="selection" id="player-selection">X</p>
+                <p class="round-winner">First to score 5 points wins</p>
+                <div class="wrapper">
+                    <div class="score-container">
+                        <div class="selection-container">
+                            <p class="selection" id="player-selection">X</p>
+                        </div>
+                        <p>Player: <span id="player-score">0</span></p>
                     </div>
-                    <p>Player: <span id="player-score">0</span></p>
-                </div>
-                <p class="versus">vs</p>
-                <div class="score-container">
-                    <div class="selection-container">
-                        <p class="selection" id="pc-selection">X</p>
+                    <p class="versus">vs</p>
+                    <div class="score-container">
+                        <div class="selection-container">
+                            <p class="selection" id="pc-selection">X</p>
+                        </div>
+                        <p>PC: <span id="pc-score">0</span></p>
                     </div>
-                    <p>PC: <span id="pc-score">0</span></p>
                 </div>
             </div>
             <ul class="buttons">
@@ -44,7 +47,7 @@
         </article>
     </main>
     <footer>
-        <p class="attribution">Design & Code by <a href="https://github.com/David35D">David</a></p>
+        <p class="attribution">Design & Code by <a href="https://github.com/David35D" target="_blank">David</a></p>
     </footer>
 
     <!--

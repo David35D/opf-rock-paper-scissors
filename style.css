@@ -54,8 +54,17 @@
     color: var(--clr-neutral-100);
     font-family: var(--ff);
     font-weight: var(--fw-regular);
-    font-size: 1.3rem;
-    padding: 3rem;
+    font-size: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  main {
+    width: 95%;
   }
 
   .game-card {
@@ -65,25 +74,38 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 1rem;
-    padding: 2rem;
+    gap: 3rem;
+    padding: 3rem 1.2rem;
     border-radius: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .card__title {
-    margin-bottom: 0.5rem;
-    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+    font-family: 'Saira';
   }
 
   .round-winner {
     margin-top: 0.5rem;
+    font-weight: var(--fw-bold);
   }
 
   .scoreboard {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 50%;
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
   }
 
   .score-container {
@@ -94,18 +116,18 @@
     background-color: var(--clr-primary-400);
     text-align: center;
     font-weight: var(--fw-bold);
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     border-radius: 1rem;
     margin-bottom: 0.5rem;
   }
 
   .selection {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 
   .versus {
     font-weight: var(--fw-bold);
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 
   .buttons {
@@ -113,7 +135,7 @@
     padding-left: 0;
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 100%;
   }
 
   .button {
@@ -122,9 +144,14 @@
     border: none;
     border-radius: 1rem;
     padding: 0.5rem 1rem;
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 
   .attribution {
     text-align: center;
+  }
+
+  .attribution a {
+    text-decoration: none;
+    color: gold;
   }
