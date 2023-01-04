@@ -10,37 +10,38 @@
 </head>
 <body>
     <main>
-        <h1>Rock, paper, scissors</h1>
-        <p>Play 5 rounds against the computer, the first one to reach 5 points wins</p>
-        <div class="round-container">
-            <div class="selection-container">
-                <p id="player-selection">X</p>
+        <article class="game-card">
+            <div class="card__header">
+                <h1 class="card__title">Rock Paper Scissors</h1>
+                <p class="round-winner">First to score 5 points wins</p>
+            </div>    
+            <div class="scoreboard">
+                <div class="score-container">
+                    <div class="selection-container">
+                        <p class="selection" id="player-selection">X</p>
+                    </div>
+                    <p>Player: <span id="player-score">0</span></p>
+                </div>
+                <p class="versus">vs</p>
+                <div class="score-container">
+                    <div class="selection-container">
+                        <p class="selection" id="pc-selection">X</p>
+                    </div>
+                    <p>PC: <span id="pc-score">0</span></p>
+                </div>
             </div>
-            <div class="selection-container">
-                <p id="computer-selection">X</p>
-            </div>
-        </div>
-        <h2>Score</h2>
-        <div class="scores">
-            <div class="score-container">
-                <p class="score" id="player-score">5</p>
-                <p>You</p>
-            </div>
-            <div class="score-container">
-                <p class="score" id="computer-score">5</p>
-                <p>Computer</p>
-            </div>
-        </div>
-        <ul class="buttons">
-            <li class="button__wrapper">
-                <button class="button" id="rock">Rock</button>
-            <li class="button__wrapper">
-                <button class="button" id="paper">Paper</button>
-            </li>
-            <li class="button__wrapper">
-                <button class="button" id="scissors">Scissors</button></li>
-            </li>
-        </ul>
+            <ul class="buttons">
+                <li class="button__container">
+                    <button class="button" id="rock">✊</button>
+                </li>
+                <li class="button__container">
+                    <button class="button" id="paper">✋</button>
+                </li>
+                <li class="button__container">
+                    <button class="button" id="scissors">✌</button>
+                </li>
+            </ul>
+        </article>
     </main>
     <footer>
         <p class="attribution">Design & Code by <a href="https://github.com/David35D">David</a></p>

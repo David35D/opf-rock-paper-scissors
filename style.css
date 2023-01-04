@@ -1,5 +1,9 @@
 :root {
-    --clr-neutral-900: #1B3A4B;
+    --clr-primary-700: hsl(217, 35%, 20%);
+    --clr-primary-400: hsl(201, 47%, 20%);
+    --clr-primary-300: hsl(181, 100%, 20%);
+    --clr-neutral-400: hsla(266, 33%, 20%, 0.9);
+    --clr-neutral-100: hsl(0, 0%, 100%);
 
     --ff: 'Inter', sans-serif;
     
@@ -46,27 +50,81 @@
 
   /* App styling */
   body {
-    background-color: var(--clr-neutral-900);
+    background-color: var(--clr-primary-400);
+    color: var(--clr-neutral-100);
     font-family: var(--ff);
-    color: white;
-
-    display: grid;
-    place-content: center;
+    font-weight: var(--fw-regular);
+    font-size: 1.3rem;
+    padding: 3rem;
   }
 
-  main {
-    background-color: #144552;
+  .game-card {
+    background-color: var(--clr-primary-700);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    padding: 3rem 2.5rem;
-    border-radius: 0.5rem;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
   }
 
-  .round-container,
-  .scores,
-  .buttons {
+  .card__title {
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+  }
+
+  .round-winner {
+    margin-top: 0.5rem;
+  }
+
+  .scoreboard {
     display: flex;
-    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+  }
+
+  .score-container {
+    text-align: center;
+  }
+
+  .selection-container {
+    background-color: var(--clr-primary-400);
+    text-align: center;
+    font-weight: var(--fw-bold);
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .selection {
+    font-size: 4rem;
+  }
+
+  .versus {
+    font-weight: var(--fw-bold);
+    font-size: 3rem;
+  }
+
+  .buttons {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+  }
+
+  .button {
+    cursor: pointer;
+    background-color: var(--clr-primary-400);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 4rem;
+  }
+
+  .attribution {
+    text-align: center;
   }
