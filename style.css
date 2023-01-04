@@ -5,7 +5,8 @@
     --clr-neutral-400: hsla(266, 33%, 20%, 0.9);
     --clr-neutral-100: hsl(0, 0%, 100%);
 
-    --ff: 'Inter', sans-serif;
+    --ff-regular: 'Inter', sans-serif;
+    --ff-accent: 'Saira', serif;
     
     --fw-regular: 400;
     --fw-bold: 700;
@@ -52,7 +53,7 @@
   body {
     background-color: var(--clr-primary-400);
     color: var(--clr-neutral-100);
-    font-family: var(--ff);
+    font-family: var(--ff-regular);
     font-weight: var(--fw-regular);
     font-size: 1rem;
     margin: 1rem;
@@ -84,7 +85,7 @@
     text-align: center;
     margin-bottom: 2rem;
     font-size: 1.9rem;
-    font-family: 'Saira';
+    font-family: var(--ff-accent);
   }
 
   .round-winner {
@@ -145,13 +146,49 @@
     border-radius: 1rem;
     padding: 0.5rem 1rem;
     font-size: 2.5rem;
+    transition: all 0.1s;
+  }
+
+  .button:hover {
+    background-color: var(--clr-primary-300);
+  }
+
+  .button:active {
+    transform: scale(1.05);
   }
 
   .attribution {
     text-align: center;
+    transition: all 0.2s ease;
   }
 
   .attribution a {
     text-decoration: none;
     color: gold;
+  }
+
+  @media (min-width: 600px) {
+    main {
+      max-width: 570px;
+    }
+
+    .card__title {
+      font-size: 2.5rem;
+    }
+
+    .scoreboard {
+      width: 70%;
+    }
+
+    .selection {
+      font-size: 4rem;
+    }
+
+    .buttons {
+      width: 70%;
+    }
+
+    .button {
+      font-size: 3rem;
+    }
   }
